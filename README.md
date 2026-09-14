@@ -41,6 +41,6 @@ with transparent top-ups (1 USD = 60 points) and no hidden fees.
 
 ## Notes
 
-- The installer is Authenticode signed (Certum Code Signing 2021 CA).
-- Install and uninstall are silent (NSIS `/S`).
-- MOOGH installs per-user by default.
+- The package is the official Authenticode signed build (Certum Code Signing 2021 CA).
+- Scoop extracts the NSIS payload into the app directory: no installer is run and no registry entries are written.
+- Everything MOOGH needs lives in the app directory, so `scoop uninstall moogh` removes it completely.
